@@ -10,6 +10,6 @@ for i in range(1,a+b):
     if max <= n[i]:
         max = n[i]
 
-for i in range(a+b):
-    if max ==n[i]:
-        print(i,end=' ')
+    for i in range(a+b):
+        if max ==n[i]:
+           print(i,end=' ')
