@@ -19,3 +19,11 @@
      
 #### i.isdecimal()      
     i가 10진수 숫자이면 참 아니면 거짓
+
+ex)
+  <pre><code>
+  >>> t = [1, '3', 7, 33, 39, 52]
+  >>> for i in t:
+  ...     if i.isdecimal():
+                print(i,end=' ')
+   </pre></code>
