@@ -27,3 +27,13 @@ ex)
   ...     if i.isdecimal():
                 print(i,end=' ')
    </pre></code>
+
+#### from itertools import combinations          # 중복허용(X), 순서의미(O) 인 조합을 import
+       
+       사용법
+  <pre></code>
+  >>>  nums = [1,2,3,4]
+  >>>  cmb = list(combinations(nums,3))        # nums배열을 3개씩 조합 후 list로 변경
+  >>> 
+  </pre></code>
+   >>> [1,2,3], [1,2,4] , [2,3,4] 
