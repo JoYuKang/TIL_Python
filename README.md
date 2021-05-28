@@ -38,3 +38,20 @@ ex)
   >>> 
   </pre></code>
    >>> [1,2,3], [1,2,4] , [2,3,4] 
+
+
+#### import heapq
+
+사용법 
+ <pre></code>
+  >>>  heap = []
+  >>>  heapq.heappush(heap, 4)        # heap 4를 추가
+  >>>  heapq.heappush(heap, 1)        # heap 1를 추가
+  >>>  heapq.heappush(heap, 7)        # heap 7를 추가
+  >>>  print(heap)
+  >>>  [1, 7, 4]
+  >>>  # 힙에서 원소 삭제
+  >>>  print(heapq.heappop(heap))     # 가장 작은거 삭제
+  >>>  print(heap)
+  >>>  [3, 7]
+  </pre></code>
