@@ -11,7 +11,7 @@ cnt = 0
 
 while 1:
     cur = arr.popleft()
-    # ANY , ALL의 반대
+    # ANY , ALL의 반대 
     if any(cur[1] < x[1] for x in arr):
         arr.append(cur)
     else:

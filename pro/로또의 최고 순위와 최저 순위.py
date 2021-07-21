@@ -36,7 +36,8 @@ def solution(lottos, win_nums):
         answer[1] = 5
     if num == 1:
         answer[1] = 6
-
+    if num ==0 and count ==0:
+        return [6,6]
 
     return answer
 
