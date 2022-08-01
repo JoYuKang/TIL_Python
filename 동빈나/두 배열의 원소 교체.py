@@ -8,6 +8,7 @@ a =sorted(a)
 b= sorted(b, reverse=True)
 
 for i in range(m):
-    a[i] = b[i]
+    if(a[i] < b[i]):
+        a[i] = b[i]
 
 print(sum(a))
