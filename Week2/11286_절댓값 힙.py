@@ -1,7 +1,3 @@
-
-import sys
-
-
 import heapq
 import sys
 
@@ -21,7 +17,6 @@ for i in range(n):
         # print(heapq.heappop(heap)[1])
         result += f'{heapq.heappop(heap)[1]}\n'
     else:
-        if num not in heap:
-            heapq.heappush(heap, (abs(num), num))
+        heapq.heappush(heap, (abs(num), num))
 
 print(result)
