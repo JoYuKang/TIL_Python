@@ -6,19 +6,11 @@ arr = list(map(int,input().split()))
 
 stack =[]
 result = [-1] * num
-arr = list(reversed(arr))
 
-for i in range(num):
-    while stack:
-        if stack[-1] < arr[i]:
-            stack.pop()
-        else:
-            result[i] = stack[-1]
-            stack.append(arr[i])
-            break
-    if not stack:
-        stack.append(arr[i])
+
+for i in range(len(arr)):
+    while stack and arr[stack[-1]] < arr[i]:
+        result[stack.pop()] = arr[i]
+    stack.append(i)
             
-           
-
-print(*reversed(result))
+print(*result)
