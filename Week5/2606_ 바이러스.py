@@ -1,5 +1,4 @@
 
-import readline
 import sys
 
 
