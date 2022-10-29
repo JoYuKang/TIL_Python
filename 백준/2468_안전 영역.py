@@ -16,12 +16,13 @@ def bfs(x, y, num):
     queue.append((x,y))
     while queue:
         x, y = queue.popleft()
-        visit[x][y] = 1
+        
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
             if nx < 0 or nx >= graphLen or ny < 0 or ny >= graphLen: continue
-            if visit[nx][ny] > 0 or graph[nx][ny] < num: continue
+            if visit[nx][ny] > 0 or graph[nx][ny] <= num: continue
+            visit[nx][ny] = 1
             queue.append((nx, ny))
 
 result = 0
